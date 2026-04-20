@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      background: radial-gradient(circle at center, #0b1a2b 0%, #050d18 100%);
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 64px;
+      letter-spacing: 10px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 1.5;
+      color: #d0d7e2;
+    }
+
+    .coming {
+      margin-top: 40px;
+      font-size: 16px;
+      letter-spacing: 4px;
+      color: #ffd700;
+      opacity: 0.8;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 0.3; }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- שים כאן את הלוגו שלך -->
+    <img src="logo.png" alt="Prelligence Logo" class="logo">
+
+    <h1>PRELLIGENCE</h1>
+
+    <div class="tagline">
+      Unlocking the Economic Potential of Critical Infrastructure<br>
+      through Electrical Signal Intelligence
+    </div>
+
+    <div class="coming">
+      COMING SOON...
+    </div>
+
+  </div>
+
+</body>
+</html>
